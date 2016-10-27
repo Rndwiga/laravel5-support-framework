@@ -1,12 +1,13 @@
-## Laravel 5-3 example ##
 
+## Laravel 5-3 example ##
+Cloned from: https://github.com/bestmomo/laravel5-3-example.git
 **Laravel 5-3 example** is a tutorial application.
 
 It's an upgrade of [this repository](https://github.com/bestmomo/laravel5-example) for Laravel 5.3 with big code cleaning and refactoring and application tests.
 
 ### Installation (the slow way) ###
 
-* type `git clone https://github.com/bestmomo/laravel5-3-example.git projectname` to clone the repository 
+* type `git clone https://github.com/bestmomo/laravel5-3-example.git projectname` to clone the repository
 * type `cd projectname`
 * type `composer install`
 * type `composer update`
@@ -37,7 +38,7 @@ It's an upgrade of [this repository](https://github.com/bestmomo/laravel5-exampl
 * [CKEditor](http://ckeditor.com) the great editor
 * [Elfinder](https://github.com/Studio-42/elFinder) the nice file manager
 * [laravel-lipsum](https://github.com/magyarjeti/laravel-lipsum) for the lipsum generator
-* [Laravel Collective](https://laravelcollective.com/) for Forms and Html 
+* [Laravel Collective](https://laravelcollective.com/) for Forms and Html
 * [Sweat Alert](http://t4t5.github.io/sweetalert/) for the cool alerts
 
 ### Features ###
