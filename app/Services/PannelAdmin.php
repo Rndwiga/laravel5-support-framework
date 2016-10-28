@@ -11,15 +11,20 @@ class PannelAdmin
     protected $infos;
 
     /**
-     * Pannel color
+     * Pannel icon color
      * @var string
      */
-    public $color;
+    public $iconColor;
+    /**
+     * Pannel text color
+     * @var string
+     */
+    public $textColor;
 
     /**
      * Pannel icon
      * @var string
-     */    
+     */
     public $icon;
 
     /**
@@ -60,7 +65,8 @@ class PannelAdmin
      */
     public function __construct(Array $infos)
     {
-        $this->color = $infos['color'];
+        $this->iconColor = $infos['iconColor'];
+        $this->textColor = $infos['textColor'];
         $this->icon = $infos['icon'];
         $this->model = new $infos['model'];
         $this->name = $infos['name'];
@@ -79,7 +85,7 @@ class PannelAdmin
     {
         $this->name = trans($this->name);
         $this->total = trans($this->total);
-        
+
         $this->nbr = (object)([
             'total' => $this->model->count(),
             'new' => $this->model->whereSeen(0)->count()
@@ -88,4 +94,3 @@ class PannelAdmin
         return $this;
     }
 }
-

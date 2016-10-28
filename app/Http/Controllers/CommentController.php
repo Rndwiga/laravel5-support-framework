@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Http\Controllers;
 
@@ -41,7 +41,7 @@ class CommentController extends Controller
     {
         $comments = $this->commentRepository->getCommentsWithPostsAndUsers(config('app.nbrPages.back.comments'));
 
-        return view('back.comments.index', compact('comments'));
+        return view('backend.comments.comments', compact('comments'));
     }
 
     /**
@@ -56,9 +56,9 @@ class CommentController extends Controller
         $this->commentRepository->store($request->all(), $request->user()->id);
 
         $blog = $blogRepository->getById($request->post_id);
-        
+
         $blog->user->notify(new Commented($blog));
-        
+
         if (!$request->user()->valid) {
             $request->session()->flash('warning', trans('front/blog.warning'));
         }

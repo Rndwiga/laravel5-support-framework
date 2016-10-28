@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'dashboard' => 'Comments gestion',
+    'dashboard' => 'Blog Comments',
     'comments' => 'Comments',
-    'author' => 'Author',  
+    'author' => 'Author',
     'date' => 'Date',
     'post' => 'Post',
     'valid' => 'valid',

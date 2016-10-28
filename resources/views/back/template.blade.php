@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>{{ trans('front/site.title') }}</title>
-        <meta name="description" content="">	
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -47,7 +47,7 @@
                                 <a href="{{ url('/logout') }}" id="logout">
                                     <span class="fa fa-fw fa-power-off"></span>
                                     {{ trans('back/admin.logout') }}
-                                </a>   
+                                </a>
                                 {!! Form::open(['url' => '/logout', 'id' => 'logout-form']) !!}{!! Form::close() !!}
                             </li>
                         </ul>
@@ -71,11 +71,11 @@
                             </li>
                             <li {!! classActivePath('contact') !!}>
                                 <a href="{!! url('contact') !!}"><span class="fa fa-fw fa-envelope"></span> {{ trans('back/admin.messages') }}</a>
-                            </li>  
+                            </li>
                             <li {!! classActivePath('comment') !!}>
                                 <a href="{!! url('comment') !!}"><span class="fa fa-fw fa-comments"></span> {{ trans('back/admin.comments') }}</a>
-                            </li> 
-                        @endif                  
+                            </li>
+                        @endif
                         <li {!! classActivePath('medias') !!}>
                             <a href="{!! route('medias') !!}"><span class="fa fa-fw fa-file-image-o"></span> {{ trans('back/admin.medias') }}</a>
                         </li>
@@ -102,7 +102,6 @@
                 </div>
 
             </div>
-
         </div>
 
         {!! HTML::script('https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js') !!}

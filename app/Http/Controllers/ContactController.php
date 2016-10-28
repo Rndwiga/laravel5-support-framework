@@ -38,7 +38,8 @@ class ContactController extends Controller
     {
         $messages = $this->contactRepository->getContactsOrder();
 
-        return view('back.messages.index', compact('messages'));
+        //return view('back.messages.index', compact('messages'));
+        return view('backend.messages.emails', compact('messages'));
     }
 
     /**
@@ -87,7 +88,7 @@ class ContactController extends Controller
     public function destroy($id)
     {
         $this->contactRepository->destroy($id);
-        
+
         return redirect('contact');
     }
 }

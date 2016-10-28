@@ -1,6 +1,8 @@
 
 ## Laravel 5-3 example ##
-Cloned from: https://github.com/bestmomo/laravel5-3-example.git
+
+* Cloned from: https://github.com/bestmomo/laravel5-3-example.git
+
 **Laravel 5-3 example** is a tutorial application.
 
 It's an upgrade of [this repository](https://github.com/bestmomo/laravel5-example) for Laravel 5.3 with big code cleaning and refactoring and application tests.

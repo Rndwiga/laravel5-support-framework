@@ -1,4 +1,4 @@
-<div class="col-lg-4 col-md-6">
+<div class="col-lg-4 col-md-6"> 
     <div class="panel panel-{{ $pannel->color }}">
         <div class="panel-heading">
             <div class="row">
